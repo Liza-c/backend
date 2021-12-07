@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block additional %}
+    <h1>Nothing to show</h1>>
+{% endblock additional %}
+
+{% block content %}
+{% if user.is_authenticated and post.author == user %}
+</br>
+    Post update ------- 
+    <form action='' method='post'>
+        {% csrf_token %}
+        {{ form }}
+        <input type='submit' value="Update post">
+    </form>
+    {% else %}
+    <p>You are not logged in.</p>
+    {% endif %}
+    
+{% endblock content %}

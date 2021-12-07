@@ -1,0 +1,34 @@
+.container-fluid{
+  background-color: rgb(5, 4, 49);
+  color: blanchedalmond;
+  margin: 0px;
+  height: 100px;
+  display: inline;
+  padding: 3px;
+}
+
+.content {
+  display: flex;
+  margin: 5% 5%;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: calc(100vh - 70px);
+}
+
+.content .post {
+  margin: 20px 5px;
+}
+
+.footer{
+      background-color: rgb(177, 171, 127);
+      height: 30px;
+      align-items: center;
+      bottom: 0;
+      position: fixed;
+      width: 100%;
+  }
+
+.header{
+  background-color: brown;
+}
